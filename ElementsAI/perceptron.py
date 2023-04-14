@@ -1,5 +1,4 @@
-def perceptron(Sensor):
-    weights = [1 for i in range(15)]
+def perceptron(Sensor, weights):
     b = 7
     s = 0
     for i in range(15):
