@@ -11,6 +11,7 @@ class PreceptronTest(TestCase):
         self.assertEquals(perceptron(num4), False)
 
 
+
 num1 = list('001001001001001')
 num2 = list('111001111100111')
 num3 = list('asexjdvnkndjkjk')

@@ -2,9 +2,10 @@ def perceptron(Sensor, weights):
     b = 7
     s = 0
     for i in range(15):
-        if (Sensor[i]).isdigit() == True:
+        try:
+            x = float(Sensor[i]) or int(Sensor[i])
             s += int(Sensor[i]) * weights[i]
-        else:
+        except ValueError:
             print("ошибка значения")
             return False
 

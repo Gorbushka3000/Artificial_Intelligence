@@ -17,7 +17,7 @@ nums = [number0, number1, number2, number3, number4, number5, number6, number7, 
 tema = 5
 n_sensor = 15
 weights = [0 for i in range(n_sensor)]
-quantityLes = 100
+quantityLes = 10000
 
 
 
@@ -43,9 +43,22 @@ class Teaching:
             else:
                 if not r:
                     self.increase(nums[tema])
-            print(j)
-            print(weights)
+
+
 
 
 Teacher = Teaching()
 Teacher.teach()
+
+print(weights)
+
+print("0 = 5?", perceptron(number0, weights))
+print("1 = 5?", perceptron(number1, weights))
+print("2 = 5?", perceptron(number2, weights))
+print("3 = 5?", perceptron(number3, weights))
+print("4 = 5?", perceptron(number4, weights))
+print("5 = 5?", perceptron(number5, weights))
+print("6 = 5?", perceptron(number6, weights))
+print("7 = 5?", perceptron(number7, weights))
+print("8 = 5?", perceptron(number8, weights))
+print("9 = 5?", perceptron(number9, weights))
