@@ -18,14 +18,14 @@ print(y)
 X = df.iloc[0:100, [0, 2]].values
 print(X)
 print('end x')
-
+'''
 plt.scatter(X[0:50, 0], X[0:50, 1], color='red', marker='o', label='щетинситый')
 plt.scatter(X[50:100, 0], X[50:100, 1], color='blue', marker='x', label='разноцветный')
 plt.xlabel('Длина чашелистника')
 plt.ylabel('Длина лепестка')
 plt.legend(loc='upper left')
 plt.show()
-
+'''
 
 class AdaptiveLinearNeuron(object):
     def __init__(self, rate=0.01, niter=10):
